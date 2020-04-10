@@ -1,37 +1,6 @@
-<div class="navigation">
-  <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-  <label for="navi-toggle" class="navigation__button">
-      <span class="navigation__icon">&nbsp;</span>
-  </label>
-
-  <div class="navigation__background">&nbsp;</div>
-
-  <nav class="navigation__nav">
-      <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
-          </ul>
-  </nav>
-</div>
-
-<header class="header">
-  <div class="header__logo-box">
-      <img src="../../../assets/img/logo-white.png" alt="Logo" class="header__logo">
-  </div>
-
-  <div class="header__text-box">
-      <h1 class="heading-primary">
-          <span class="heading-primary--main">Outdoors</span>
-          <span class="heading-primary--sub">is where life happens</span>
-      </h1>
-
-      <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
-  </div>
-</header>
+<app-navigator></app-navigator>
+<app-header></app-header>
 
 <main>
   <section class="section-about">
@@ -59,23 +28,23 @@
           <div class="col-1-of-2">
               <div class="composition">
 
-                  <img srcset="../../../../src/assets/img/nat-1.jpg 300w, ../../../../src/assets/img/nat-1-large.jpg 1000w"
+                  <img srcset="../../../assets/img/nat-1.jpg 300w, ../../../img/nat-1-large.jpg 1000w"
                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                        alt="Photo 1"
                        class="composition__photo composition__photo--p1"
-                       src="../../../../src/assets/img/nat-1-large.jpg">
+                       src="../../../assets/img/nat-1-large.jpg">
 
-                  <img srcset="../../../../src/assets/img/nat-2.jpg 300w, ../../../../src/assets/img/nat-2-large.jpg 1000w"
+                  <img srcset="../../../assets/img/nat-2.jpg 300w, ../../nat-2.jpg 1000w"
                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                        alt="Photo 2"
                        class="composition__photo composition__photo--p2"
-                       src="../../../../src/assets/img/nat-2-large.jpg">
+                       src="../../../assets/img/nat-2-large.jpg">
 
-                  <img srcset="../../../../src/assets/img/nat-3.jpg 300w, ../../../../src/assets/img/nat-3-large.jpg 1000w"
+                  <img srcset="../../../assets/img/nat-3.jpg 300w, ../../nat-3-large.jpg 1000w"
                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                        alt="Photo 3"
                        class="composition__photo composition__photo--p3"
-                       src="../../../../src/assets/img/nat-3-large.jpg">
+                       src="../../../assets/img/nat-3-large.jpg">
 
                   <!--
                   <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
@@ -246,8 +215,8 @@
   <section class="section-stories">
       <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
-              <source src="../../../../src/assets/img/video.mp4" type="video/mp4">
-              <source src="../../../../src/assets/img/video.webm" type="video/webm">
+              <source src="../../../assets/img/video.mp4" type="video/mp4">
+              <source src="../../../assets/img/video.webm" type="video/webm">
               Your browser is not supported!
           </video>
       </div>
@@ -261,7 +230,7 @@
       <div class="row">
           <div class="story">
               <figure class="story__shape">
-                  <img src="../../../../src/assets/img/nat-8.jpg" alt="Person on a tour" class="story__img">
+                  <img src="../../../assets/img/nat-8.jpg" alt="Person on a tour" class="story__img">
                   <figcaption class="story__caption">Mary Smith</figcaption>
               </figure>
               <div class="story__text">
@@ -278,7 +247,7 @@
       <div class="row">
           <div class="story">
               <figure class="story__shape">
-                  <img src="../../../../src/assets/img/nat-9.jpg" alt="Person on a tour" class="story__img">
+                  <img src="../../../assets/img/nat-8.jpg" alt="Person on a tour" class="story__img">
                   <figcaption class="story__caption">Jack Wilson</figcaption>
               </figure>
               <div class="story__text">
@@ -350,9 +319,9 @@
   <div class="footer__logo-box">
 
       <picture class="footer__logo">
-          <source srcset="../../../../src/assets/img/logo-green-small-1x.png 1x, ../../../../src/assets/img/logo-green-small-2x.png 2x"
+          <source srcset="../../../assets/img/logo-green-small-1x.png 1x, ../../logo-green-small-2x.png 2x"
                   media="(max-width: 37.5em)">
-          <img srcset="../../../../src/assets/img/logo-green-1x.png 1x, ../../../../src/assets/img/logo-green-2x.png 2x" alt="Full logo" src="../../../../src/img/logo-green-2x.png">
+          <img srcset="../../../assets/img/logo-green-1x.png 1x, ../../logo-green-2x.png 2x" alt="Full logo" src="../../../assets/img/logo-green-2x.png">
       </picture>
 
 
@@ -384,8 +353,8 @@
 <div class="popup" id="popup">
   <div class="popup__content">
       <div class="popup__left">
-          <img src="../../../../src/assets/img/nat-8.jpg" alt="Tour photo" class="popup__img">
-          <img src="../../../../src/assets/img/nat-9.jpg" alt="Tour photo" class="popup__img">
+          <img src="../../../assets/img/nat-8.jpg" alt="Tour photo" class="popup__img">
+          <img src="../../../assets/img/nat-9.jpg" alt="Tour photo" class="popup__img">
       </div>
       <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>

@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { AppRouting } from './app.route';
 import { AppComponent } from './app.component';
+import { HomeViewModule } from './views/home-view-component/home-view.module';
+import { WhyRxjsViewModule } from './views/why-rxjs-view-component/why-rxjs-view.module';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HomeViewModule,
+    WhyRxjsViewModule,
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
