@@ -2,5 +2,5 @@
 
 ## URL
 
-https://rxjs-guide.web.app/why-rxjs
+https://rxjs-guide.web.app
 
