@@ -7,6 +7,8 @@ import { NavigatorModule } from 'src/app/components/navigator-component/navigato
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { routeWhyRxjsView } from './why-rxjs-view.router';
+import { SectionExplanationModule } from 'src/app/section-explanation/section-explanation.module';
+import { SectionExplanationCardsModule } from 'src/app/section-explanation-cards/section-explanation-cards.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { routeWhyRxjsView } from './why-rxjs-view.router';
   imports: [
     CommonModule,
     RouterModule.forChild([routeWhyRxjsView]),
-    NavigatorModule
+    NavigatorModule,
+    SectionExplanationModule,
+    SectionExplanationCardsModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
