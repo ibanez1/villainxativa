@@ -33,7 +33,8 @@ export const AppRouting = RouterModule.forRoot(routes, {
   useHash: false,
   scrollPositionRestoration: 'enabled',
   enableTracing: false,
-  onSameUrlNavigation: 'reload'
+  onSameUrlNavigation: 'reload',
+  anchorScrolling: 'enabled',
 })
 
 export class AppRoutingModule { }
