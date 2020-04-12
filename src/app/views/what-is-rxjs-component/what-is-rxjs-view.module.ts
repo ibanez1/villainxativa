@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { routeWhatIsRxjsView } from './what-is-rxjs-view.router';
 import { WhatIsRxjsViewComponent } from './what-is-rxjs-view.component';
+import { SectionBoxesModule } from 'src/app/section-boxes/section-boxes.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { WhatIsRxjsViewComponent } from './what-is-rxjs-view.component';
   imports: [
     CommonModule,
     RouterModule.forChild([routeWhatIsRxjsView]),
-    NavigatorModule
+    NavigatorModule,
+    SectionBoxesModule
     ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
