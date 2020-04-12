@@ -39,7 +39,7 @@
                               <p class="card__price-value">Values</p>
 
                           </div>
-                          <a href="#popup" class="btn btn--white">Know more!</a>
+                          <a [routerLink]="['/what-is-rxjs']"class="btn btn--white">Know more!</a>
                       </div>
                   </div>
              </div>
@@ -73,7 +73,7 @@
                               <p class="card__price-value">Data Flow</p>
                               <p class="card__price-value">Lazy</p>
                           </div>
-                          <a href="#popup" class="btn btn--white">Konw more!</a>
+                          <a [routerLink]="['/why-rxjs']" class="btn btn--white">Know more!</a>
                       </div>
                   </div>
               </div>
@@ -108,7 +108,7 @@
                               <p class="card__price-value">Reduce</p>
 
                           </div>
-                          <a href="#popup" class="btn btn--white">Know more!</a>
+                          <a [routerLink]="['/custom-operator']" class="btn btn--white">Know more!</a>
                       </div>
                   </div>
               </div>
@@ -116,95 +116,12 @@
       </div>
 
       <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--green">Discover all Operators</a>
-      </div>
-  </section>
-
-  
-
-  <section class="section-book">
-      <div class="row">
-          <div class="book">
-              <div class="book__form">
-                  <form action="#" class="form">
-                      <div class="u-margin-bottom-medium">
-                          <h2 class="heading-secondary">
-                              Start booking now
-                          </h2>
-                      </div>
-
-                      <div class="form__group">
-                          <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                          <label for="name" class="form__label">Full name</label>
-                      </div>
-
-                      <div class="form__group">
-                          <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                          <label for="email" class="form__label">Email address</label>
-                      </div>
-
-                      <div class="form__group u-margin-bottom-medium">
-                          <div class="form__radio-group">
-                              <input type="radio" class="form__radio-input" id="small" name="size">
-                              <label for="small" class="form__radio-label">
-                                  <span class="form__radio-button"></span>
-                                  Small tour group
-                              </label>
-                          </div>
-
-                          <div class="form__radio-group">
-                              <input type="radio" class="form__radio-input" id="large" name="size">
-                              <label for="large" class="form__radio-label">
-                                  <span class="form__radio-button"></span>
-                                  Large tour group
-                              </label>
-                          </div>
-                      </div>
-
-                      <div class="form__group">
-                          <button class="btn btn--green">Next step &rarr;</button>
-                      </div>
-                  </form>
-              </div>
-          </div>
+          <a href="#popup" class="btn btn--green">Discover all Operators</a>
       </div>
   </section>
 </main>
 
-<footer class="footer">
-  <div class="footer__logo-box">
-
-      <picture class="footer__logo">
-          <source srcset="../../../assets/img/logo-green-small-1x.png 1x, ../../logo-green-small-2x.png 2x"
-                  media="(max-width: 37.5em)">
-          <img srcset="../../../assets/img/logo-green-1x.png 1x, ../../logo-green-2x.png 2x" alt="Full logo" src="../../../assets/img/logo-green-2x.png">
-      </picture>
-
-
-      
-  </div>
-  <div class="row">
-      <div class="col-1-of-2">
-          <div class="footer__navigation">
-              <ul class="footer__list">
-                  <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                  <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-              </ul>
-          </div>
-      </div>
-      <div class="col-1-of-2">
-          <p class="footer__copyright">
-              Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
-              Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal
-              and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
-              Schmedtmann, is of course highly appreciated!
-          </p>
-      </div>
-  </div>
-</footer>
+<app-footer></app-footer>
 
 <div class="popup" id="popup">
   <div class="popup__content">
@@ -227,7 +144,7 @@
               vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
               euismod nisi porta.
           </p>
-          <a href="#" class="btn btn--green">Book now</a>
+          <a [routerLink]="['/operators']" class="btn btn--green">Operators</a>
       </div>
   </div>
 </div>

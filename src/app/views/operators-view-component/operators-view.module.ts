@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { routeOperatorsView } from './operators-view.router';
 import { OperatorsViewComponent } from './operators-view.component';
+import { FooterModule } from 'src/app/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { OperatorsViewComponent } from './operators-view.component';
   imports: [
     CommonModule,
     RouterModule.forChild([routeOperatorsView]),
-    NavigatorModule
+    NavigatorModule,
+    FooterModule
     ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

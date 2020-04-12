@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { routeCustomOperatorView } from './custom-operator-view.router';
 import { CustomOperatorViewComponent } from './custom-operator-view.component';
+import { SectionContentModule } from 'src/app/section-content/section-content.module';
+import { FooterModule } from 'src/app/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CustomOperatorViewComponent } from './custom-operator-view.component';
   imports: [
     CommonModule,
     RouterModule.forChild([routeCustomOperatorView]),
-    NavigatorModule
+    NavigatorModule,
+    SectionContentModule,
+    FooterModule
     ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

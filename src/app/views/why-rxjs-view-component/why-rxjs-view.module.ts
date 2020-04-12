@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { routeWhyRxjsView } from './why-rxjs-view.router';
 import { SectionExplanationModule } from 'src/app/components/section-explanation/section-explanation.module';
 import { SectionExplanationCardsModule } from 'src/app/components/section-explanation-cards/section-explanation-cards.module';
+import { FooterModule } from 'src/app/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SectionExplanationCardsModule } from 'src/app/components/section-explan
     RouterModule.forChild([routeWhyRxjsView]),
     NavigatorModule,
     SectionExplanationModule,
-    SectionExplanationCardsModule
+    SectionExplanationCardsModule,
+    FooterModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

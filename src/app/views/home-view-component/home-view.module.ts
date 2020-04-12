@@ -6,6 +6,7 @@ import { NavigatorModule } from 'src/app/components/navigator-component/navigato
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { routeHomeView } from './home-view.router';
+import { FooterModule } from 'src/app/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { routeHomeView } from './home-view.router';
     CommonModule,
     RouterModule.forChild([routeHomeView]),
     HeaderModule,
-    NavigatorModule
+    NavigatorModule,
+    FooterModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
