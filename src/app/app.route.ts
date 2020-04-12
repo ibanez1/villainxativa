@@ -17,6 +17,16 @@ const routes: Routes = [
     loadChildren:
       "./views/why-rxjs-view-component/why-rxjs-view.module#WhyRxjsViewModule",
   },
+  {
+  path: "what-is-rxjs",
+  loadChildren:
+    "./views/what-is-rxjs-component/what-is-rxjs-view.module#WhatIsRxjsViewModule",
+  },
+  {
+    path: "operators",
+    loadChildren:
+      "./views/operators-view-component/operators-view.module#OperatorsViewModule",
+    },
 
   {
     path: "custom-operator",
