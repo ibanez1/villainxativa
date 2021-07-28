@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "rxjs-guide": {
+    "villainxativa": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/rxjs-guide",
+            "outputPath": "dist/villainxativa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "rxjs-guide:build"
+            "browserTarget": "villainxativa:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "rxjs-guide:build:production"
+              "browserTarget": "villainxativa:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rxjs-guide:build"
+            "browserTarget": "villainxativa:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "rxjs-guide:serve"
+            "devServerTarget": "villainxativa:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "rxjs-guide:serve:production"
+              "devServerTarget": "villainxativa:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "rxjs-guide"
+  "defaultProject": "villainxativa"
 }

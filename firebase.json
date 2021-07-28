@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/rxjs-guide",
+    "public": "dist/villainxativa",
     "ignore": [
       "firebase.json",
       "**/.*",
