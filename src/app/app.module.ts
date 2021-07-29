@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { AppRouting } from './app.route';
 import { AppComponent } from './app.component';
 import { HomeViewModule } from './views/home-view-component/home-view.module';
-import { WhyRxjsViewModule } from './views/why-rxjs-view-component/why-rxjs-view.module';
-import { WhatIsRxjsViewModule } from './views/what-is-rxjs-component/what-is-rxjs-view.module';
-import { OperatorsViewModule } from './views/operators-view-component/operators-view.module';
-import { CustomOperatorViewModule } from './views/custom-operator-view-component/custom-operator-view.module';
+import { TheLandViewModule } from './views/the-land-view-component/the-land-view.module';
+import { TheVillaViewModule } from './views/the-villa-view-component/the-villa-view.module';
+import { PhotosAndVideosViewModule } from './views/photos-and-videos-view-component/photos-and-videos-view.module';
+import { SomeDataViewModule } from './views/some-data-view-component/some-data-view.module';
 
 
 @NgModule({
@@ -16,10 +16,10 @@ import { CustomOperatorViewModule } from './views/custom-operator-view-component
   imports: [
     BrowserModule,
     HomeViewModule,
-    WhyRxjsViewModule,
-    WhatIsRxjsViewModule,
-    OperatorsViewModule,
-    CustomOperatorViewModule,
+    TheLandViewModule,
+    TheVillaViewModule,
+    PhotosAndVideosViewModule,
+    SomeDataViewModule,
     AppRouting
   ],
   providers: [],

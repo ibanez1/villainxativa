@@ -1,23 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-import { WhyRxjsViewComponent } from './why-rxjs-view.component';
+import { TheLandViewComponent } from './the-land-view.component';
 import { HeaderModule } from '../../components/header/header.module';
 import { NavigatorModule } from 'src/app/components/navigator-component/navigator.module';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { routeWhyRxjsView } from './why-rxjs-view.router';
+import { routeTheLandView } from './the-land-view.router';
 import { SectionExplanationModule } from 'src/app/components/section-explanation/section-explanation.module';
 import { SectionExplanationCardsModule } from 'src/app/components/section-explanation-cards/section-explanation-cards.module';
 import { FooterModule } from 'src/app/footer/footer.module';
 
 @NgModule({
   declarations: [
-    WhyRxjsViewComponent
+    TheLandViewComponent
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild([routeWhyRxjsView]),
+    RouterModule.forChild([routeTheLandView]),
     NavigatorModule,
     SectionExplanationModule,
     SectionExplanationCardsModule,
@@ -26,4 +26,4 @@ import { FooterModule } from 'src/app/footer/footer.module';
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class WhyRxjsViewModule { }
+export class TheLandViewModule { }

@@ -2,9 +2,9 @@
     height: 85vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
-    url(../assets/img/river.jpeg);
+        rgba($color-primary-light, 0.2),
+        rgba($color-primary-dark, 0.2)),
+    url(../assets/img/villa_example.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -21,9 +21,9 @@
             only screen and (min-width: 125em) {
         background-image: linear-gradient(
             to right bottom,
-            rgba($color-primary-light, 0.8),
-            rgba($color-primary-dark, 0.8)),
-        url(../assets/img/river.jpeg);
+            rgba($color-primary-light, 0.2),
+            rgba($color-primary-dark, 0.2)),
+        url(../assets/img/villa_example.jpg);
     }
 
     @include respond(phone) {

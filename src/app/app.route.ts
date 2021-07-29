@@ -7,31 +7,25 @@ const routes: Routes = [
   },
 
   {
-    path: "operators",
+    path: "photos-and-videos",
     loadChildren:
-      "./views/operators-view-component/operators-view.module#OperatorsViewModule",
+      "./views/photos-and-videos-view-component/photos-and-videos-view.module#PhotosAndVideosViewModule",
   },
 
   {
-    path: "why-rxjs",
+    path: "the-land",
     loadChildren:
-      "./views/why-rxjs-view-component/why-rxjs-view.module#WhyRxjsViewModule",
+      "./views/the-land-view-component/the-land-view.module#TheLandViewModule",
   },
   {
-  path: "what-is-rxjs",
+  path: "the-villa",
   loadChildren:
-    "./views/what-is-rxjs-component/what-is-rxjs-view.module#WhatIsRxjsViewModule",
+    "./views/the-villa-view-component/the-villa-view.module#TheVillaViewModule",
   },
   {
-    path: "operators",
+    path: "some-data",
     loadChildren:
-      "./views/operators-view-component/operators-view.module#OperatorsViewModule",
-    },
-
-  {
-    path: "custom-operator",
-    loadChildren:
-      "./views/custom-operator-view-component/custom-operator-view.module#CustomOperatorViewModule",
+      "./views/some-data-view-component/some-data-view.module#SomeDataViewModule",
   },
 
   { path: "**", redirectTo: "/home", pathMatch: "full" },
