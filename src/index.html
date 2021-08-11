@@ -9,5 +9,28 @@
 </head>
 <body>
   <app-root></app-root>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCXySxvuyMTACZ-GCTGc4_xqdCM_gHy6W8",
+    authDomain: "villa-in-xativa.firebaseapp.com",
+    projectId: "villa-in-xativa",
+    storageBucket: "villa-in-xativa.appspot.com",
+    messagingSenderId: "539652132441",
+    appId: "1:539652132441:web:9e71c3576b385d025eeb48",
+    measurementId: "G-Q0H3KX5TGX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
